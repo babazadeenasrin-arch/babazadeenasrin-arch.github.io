@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Nasrin Babazade - Chemical Engineer portfolio, laboratory research, process safety and biotechnology.">
+<title>Nasrin Babazade | Chemical Engineer</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+:root{--navy:#102c46;--blue:#315f83;--mid:#6f9bb8;--ink:#23384a;--muted:#637789;--paper:#f5f1e8;--cream:#fbf8f0;--line:#d9e1e4;--gold:#b69a69}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);line-height:1.75}
+a{color:inherit}.container{width:min(1160px,88%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(13,39,61,.97);color:#f8f4eb;padding:16px 0;box-shadow:0 5px 24px #102c4620}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:11px;font-family:'Cormorant Garamond',serif;font-size:25px;letter-spacing:2px;font-weight:700;text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:19px}nav a{font-size:12px;text-decoration:none;color:#e3edf2;letter-spacing:1px;text-transform:uppercase}nav a:hover{color:#d4b98a}
+.hero{position:relative;isolation:isolate;overflow:hidden;min-height:610px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(9,34,56,.96),rgba(15,48,73,.82) 52%,rgba(15,48,73,.35)),url('https://commons.wikimedia.org/wiki/Special:FilePath/Marie_Curie_in_her_laboratory.jpg') center/cover no-repeat;color:#fff;padding:105px 0}
+.hero:after{content:'CHEMISTRY • RESEARCH • DISCOVERY';position:absolute;right:4%;bottom:28px;color:#ffffff9c;font:italic 15px 'Cormorant Garamond',serif;letter-spacing:3px}
+.eyebrow,.kicker{color:#c6ad7e;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase}
+h1{font-family:'Cormorant Garamond',serif;color:#fff;font-size:clamp(56px,8vw,100px);line-height:.98;font-weight:600;margin:20px 0 8px}
+.hero h2{font-family:'Cormorant Garamond',serif;color:#d9e8ef;font-size:clamp(24px,3vw,34px);font-weight:500}
+.hero p{max-width:690px;color:#e0e9ed;font-size:16px;margin-top:24px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.button{display:inline-block;padding:12px 20px;text-decoration:none;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;border:1px solid #d1bd96;transition:.2s}
+.primary{background:#d1bd96;color:#102c46}.primary:hover{background:#fff}.secondary{border-color:#c5d5de;color:#fff}.secondary:hover{background:#ffffff18}
+section{padding:82px 0}.section-head{margin-bottom:30px}
+h3.section-title{font-family:'Cormorant Garamond',serif;font-size:43px;line-height:1.1;color:var(--navy);margin-top:6px;font-weight:600}
+.underline{width:58px;height:2px;background:var(--gold);margin-top:16px}.intro{max-width:900px;color:var(--muted);font-size:15px}
+.soft{background:#eaf0f1}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px}
+.card{background:var(--cream);border:1px solid var(--line);border-radius:2px;padding:27px;box-shadow:0 9px 28px #102c4609}
+.card h4{font-family:'Cormorant Garamond',serif;color:var(--blue);font-size:25px;margin-bottom:5px}
+.meta{color:#8b744d;font-size:12px;font-weight:700;letter-spacing:.6px;margin-bottom:12px}
+.card p,.card li{color:var(--muted);font-size:14px}.card ul{padding-left:19px;margin-top:10px}.card li{margin:5px 0}
+.skill-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.skill{background:var(--cream);border:1px solid var(--line);border-left:3px solid var(--mid);padding:16px;color:var(--ink);font-size:13px;font-weight:600}
+.tag-list{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}.tag{background:#e4edf0;color:#315b75;padding:7px 11px;border-radius:2px;font-size:12px;font-weight:650}
+.timeline{border-left:1px solid #b9cbd2;margin-left:7px;padding-left:24px}.timeline .card{position:relative;margin-bottom:17px}
+.timeline .card:before{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:var(--gold);left:-30px;top:31px}
+.edu-card{display:flex;align-items:center;gap:22px;min-height:170px}.edu-logo-wrap{flex:0 0 112px;width:112px;height:112px;display:flex;align-items:center;justify-content:center;background:#fff;border:1px solid var(--line);padding:10px}.edu-logo{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}.edu-logo-fallback{font:700 25px Arial,sans-serif;letter-spacing:1px;color:#7b263d}.edu-copy{min-width:0;flex:1}.edu-copy h4{margin-bottom:5px}.edu-copy p+p{margin-top:5px}
+.contact{background:var(--navy);color:#fff}.contact h3.section-title{color:#fff}.contact .intro{color:#d4dfe6}
+.contact-box{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:27px}
+.contact-item{padding:17px;border:1px solid #ffffff30;border-radius:2px}.contact-item small{display:block;color:#d1b98d;text-transform:uppercase;letter-spacing:1.5px;font-size:10px;margin-bottom:5px}
+.contact-item a{color:white;text-decoration:none;overflow-wrap:anywhere}footer{background:#091d2e;color:#c5d0d8;text-align:center;padding:22px;font-size:12px}
+@media(max-width:760px){.university-logos{gap:20px}.nav{align-items:flex-start;flex-direction:column}nav{gap:12px}.hero{padding:75px 0;min-height:560px}section{padding:60px 0}.grid,.contact-box{grid-template-columns:1fr}.skill-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.edu-card{align-items:flex-start}}
+@media(max-width:430px){.skill-grid{grid-template-columns:1fr}.brand{font-size:22px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="Back to home">
+      <svg width="31" height="31" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M18 5h12M21 5v13L10 38a4 4 0 0 0 3.5 6h21a4 4 0 0 0 3.5-6L27 18V5" stroke="#d1bd96" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 34h18M18 28h12" stroke="#d1bd96" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="25" r="2" fill="#d1bd96"/></svg>
+      <span>MY PORTFOLIO</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a><a href="#education">Education</a>
+      <a href="#experience">Experience</a><a href="#coursework">Coursework</a><a href="#knowledge">Knowledge</a>
+      <a href="#skills">Skills</a><a href="#laboratory">Laboratory</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container">
+    <div class="eyebrow">Chemical Engineering · Laboratory Research · Process Safety</div>
+    <h1>Nasrin Babazade</h1>
+    <h2>Chemical Engineer</h2>
+    <p>
+      Detail-oriented Chemical Engineering graduate with experience in laboratory research,
+      statistical data analysis and process safety. Interested in laboratory, analytical,
+      industrial and R&amp;D opportunities across the chemical, pharmaceutical and biotechnology sectors.
+    </p>
+    <div class="actions">
+      <a class="button primary" href="#experience">Explore my experience</a>
+      <a class="button secondary" href="mailto:babazadeenasrin@gmail.com">Contact me</a>
+      <a class="button secondary" href="Nasrin_Babazade_CV.pdf" download>Download CV</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Introduction</div><h3 class="section-title">About Me</h3><div class="underline"></div></div>
+    <p class="intro">
+      I am a Chemical Engineering graduate with hands-on experience in laboratory research,
+      statistical data analysis and process safety. I have worked with experimental data from
+      collection and organization through analysis, interpretation and documentation. My academic
+      and professional interests include analytical laboratory work, industrial biotechnology,
+      chemical processes, environmental topics and process safety. I am seeking an opportunity
+      to contribute my analytical and technical skills in an industrial or research environment.
+    </p>
+  </div>
+</section>
+
+<section class="soft" id="education">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Academic background</div><h3 class="section-title">Education</h3><div class="underline"></div></div>
+    <div class="grid">
+      <article class="card edu-card">
+        <div class="edu-logo-wrap">
+          <img class="edu-logo" src="https://www.bme.hu/sites/default/files/bme_logo_nagy_bordo.jpg" alt="Budapest University of Technology and Economics official logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+          <span class="edu-logo-fallback" style="display:none">BME</span>
+        </div>
+        <div class="edu-copy">
+          <h4>Master's in Chemical Engineering</h4>
+          <div class="meta">2024 – 2026</div>
+          <p>Budapest University of Technology and Economics, Hungary</p>
+        </div>
+      </article>
+      <article class="card edu-card">
+        <div class="edu-logo-wrap">
+          <img class="edu-logo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Baku_Engineering_University_-_logo.png" alt="Baku Engineering University official logo">
+        </div>
+        <div class="edu-copy">
+          <h4>Bachelor's in Chemistry Education</h4>
+          <div class="meta">2020 – 2024</div>
+          <p>Baku Engineering University, Azerbaijan</p>
+        </div>
+      </article>
+      <article class="card edu-card">
+        <div class="edu-logo-wrap">
+          <img class="edu-logo" src="https://www.upm.es/gsfs/SFS53981" alt="Universidad Politécnica de Madrid official logo">
+        </div>
+        <div class="edu-copy">
+          <h4>Erasmus Exchange</h4>
+          <div class="meta">2026</div>
+          <p>Sustainable Biotechnological Processes and Biorefinery Technologies</p>
+          <p>Universidad Politécnica de Madrid (UPM), Escuela Técnica Superior de Ingeniería y Diseño Industrial, Spain</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Professional journey</div><h3 class="section-title">Experience</h3><div class="underline"></div></div>
+    <div class="timeline">
+      <article class="card">
+        <h4>Researcher – Laboratory and Data Analyst</h4>
+        <div class="meta">BME, Hungary · September 2025 – June 2026</div>
+        <ul>
+          <li>Collected and organized experimental laboratory data, maintaining accuracy and consistency across records.</li>
+          <li>Performed statistical calculations and analyzed experimental results to support research conclusions.</li>
+          <li>Created Excel tables and visualizations to identify trends and compare treatment groups.</li>
+          <li>Maintained experimental records and supported data consistency and traceability.</li>
+          <li>Interpreted experimental results and prepared research documentation.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h4>Industrial Internship – Chemical Engineering</h4>
+        <div class="meta">AISA, Baku, Azerbaijan · July 2025 – August 2025</div>
+        <ul>
+          <li>Participated in hazard identification and qualitative risk assessment.</li>
+          <li>Applied basic HAZID, FMEA and What-If analysis methods.</li>
+          <li>Supported the development of safety protocols and mitigation measures.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h4>IB Chemistry Teacher</h4>
+        <div class="meta">Budapest, Hungary · October 2025 – March 2026</div>
+        <p>Teaching experience in IB Chemistry.</p>
+      </article>
+      <article class="card">
+        <h4>Science Teacher</h4>
+        <div class="meta">Baku-Istanbul High School, Baku · August 2022 – June 2023</div>
+        <p>Science teaching experience.</p>
+      </article>
+      <article class="card">
+        <h4>Science Teacher</h4>
+        <div class="meta">Idrak High School, Baku · February 2024 – June 2024</div>
+        <p>Science teaching experience.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="coursework">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Academic foundation</div><h3 class="section-title">Academic Knowledge &amp; Coursework</h3><div class="underline"></div></div>
+    <p class="intro">Selected subjects studied across chemistry, chemical engineering, biotechnology, materials, environmental science and industrial systems.</p>
+    <div class="grid" style="margin-top:26px">
+      <article class="card"><h4>Physical &amp; Materials Chemistry</h4><ul><li>Physical Chemistry of Surfaces</li><li>Structural Chemistry</li><li>Material Science</li><li>Plastics</li></ul></article>
+      <article class="card"><h4>Chemical Engineering &amp; Industry</h4><ul><li>Chemical Process Design and Control</li><li>Chemical Simulations</li><li>Industrial Statistics and Design of Experiments (DOE)</li><li>Hydrocarbon Technology</li></ul></article>
+      <article class="card"><h4>Environment, Health &amp; Safety</h4><ul><li>Environmental Health and Safety of the Chemical Industry</li><li>Environmental Toxicology</li></ul></article>
+      <article class="card"><h4>Biology, Biotechnology &amp; Medicine</h4><ul><li>Biology and Biotechnology</li><li>Medicine</li></ul></article>
+      <article class="card"><h4>Analytical &amp; Measurement Technologies</h4><ul><li>Chromatography</li><li>Electronics and Measurement Technology</li><li>Applied Electrochemistry</li></ul></article>
+      <article class="card"><h4>Energy Systems</h4><ul><li>Energy Production</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<section class="soft" id="knowledge">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Subject areas</div><h3 class="section-title">Technical Knowledge</h3><div class="underline"></div></div>
+    <div class="skill-grid">
+      <div class="skill">Industrial biotechnology</div>
+      <div class="skill">Bioreactors</div>
+      <div class="skill">Cell cultivation</div>
+      <div class="skill">Downstream processing</div>
+      <div class="skill">Enzyme kinetics</div>
+      <div class="skill">Biochemical reactions</div>
+      <div class="skill">Microbiology fundamentals</div>
+      <div class="skill">Cell biology fundamentals</div>
+      <div class="skill">Pharmaceutical residues and environmental impact</div>
+      <div class="skill">Biotechnology for pharmaceutical industry</div>
+      <div class="skill">Chemical reaction engineering</div>
+      <div class="skill">Thermodynamics and process engineering</div>
+      <div class="skill">Environmental engineering</div>
+      <div class="skill">Safety engineering</div>
+    </div>
+  </div>
+</section>
+
+<section class="soft" id="laboratory">
+  <div class="container">
+    <div class="section-head"><div class="kicker">The laboratory environment</div><h3 class="section-title">Analytical Chemistry</h3><div class="underline"></div></div>
+    <p class="intro">A visual tribute to experimental science, analytical instruments and laboratory research.</p>
+    <div class="grid" style="margin-top:24px">
+      <article class="card"><h4>Analytical instrumentation</h4><p>Chromatography, spectroscopy and careful measurement are central tools in modern chemical analysis.</p></article>
+      <article class="card"><h4>Experimental practice</h4><p>Accurate records, safe laboratory work and thoughtful interpretation support reliable research.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Capabilities</div><h3 class="section-title">Skills &amp; Tools</h3><div class="underline"></div></div>
+    <div class="grid">
+      <article class="card">
+        <h4>Technical Skills</h4>
+        <div class="tag-list">
+          <span class="tag">Laboratory techniques</span><span class="tag">Chemical safety</span>
+          <span class="tag">Statistical data analysis</span><span class="tag">Academic research</span>
+          <span class="tag">LaTeX</span>
+        </div>
+      </article>
+      <article class="card">
+        <h4>Software</h4>
+        <div class="tag-list">
+          <span class="tag">MS Excel</span><span class="tag">MS Word</span>
+          <span class="tag">ChemDraw</span><span class="tag">MATLAB</span>
+          <span class="tag">Simulink</span><span class="tag">Aspen</span>
+          <span class="tag">UniSim</span>
+        </div>
+      </article>
+      <article class="card">
+        <h4>Languages</h4>
+        <p>Azerbaijani — Native</p><p>Turkish — Fluent</p><p>English — Advanced</p>
+        <p>Russian — Intermediate</p><p>Hungarian — Beginner</p><p>German — Beginner</p>
+      </article>
+      <article class="card">
+        <h4>Additional analytical methods</h4>
+        <p>pH measurement, UV-Vis spectrophotometry, HPLC, gas chromatography (GC), titration and gravimetric analysis.</p>
+        <p style="margin-top:9px;font-size:12px;">Include methods here only if you are comfortable discussing your practical experience with them in an interview.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Get in touch</div><h3 class="section-title">Contact</h3><div class="underline"></div></div>
+    <p class="intro">I am interested in laboratory, analytical, research and development, process safety and quality-related opportunities.</p>
+    <div class="contact-box">
+      <div class="contact-item"><small>Email</small><a href="mailto:babazadeenasrin@gmail.com">babazadeenasrin@gmail.com</a></div>
+      <div class="contact-item"><small>Location</small><span>Baku, Azerbaijan</span></div>
+      <div class="contact-item"><small>Phone</small><a href="tel:+994557549211">+994 55 754 92 11</a></div>
+      <div class="contact-item"><small>LinkedIn</small><a href="https://www.linkedin.com/in/nasrin-babazade-472478210" target="_blank" rel="noopener noreferrer">linkedin.com/in/nasrin-babazade-472478210</a></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>© 2026 Nasrin Babazade · Chemical Engineer Portfolio</footer>
+</body>
+</html>
